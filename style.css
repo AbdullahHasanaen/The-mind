@@ -1,0 +1,834 @@
+* {
+   margin: 0%;
+   padding: 0%;
+}
+
+body {
+   background-color: var(--backColor);
+}
+
+:root {
+   --MainPrimaryColor: #6C5DD3;
+   --ShadesPrimaryColor1: #CFC8FF;
+   --ShadesPrimaryColor2: #cfc8ff80;
+   --OpacityPrimaryColor--50: #6d5dd37b;
+   --OpacityPrimaryColor--25: #6d5dd347;
+   --OpacityPrimaryColor--75: #6d5dd3b1;
+   --OpacityPrimaryColor--100: #6d5dd3;
+
+
+   --MainSecondaryColor: #0049C6;
+   --ShadesSecondaryColor--1: #A0D7E7;
+   --ShadesSecondaryColor--2: #3F8CFF;
+   --ShadesSecondaryColor--3: #002685;
+
+
+   --MainAccentAccentColor--01: #FFA2C0;
+   --ShadesAccentColor--01--1: #FFB7F5;
+   --ShadesAccentColor--01--2: #ffb7f575;
+   --OpacityAccentColor--01: #FFA2C050;
+
+
+   --MainAccentAccentColor--02: #FFCE73;
+   --ShadeshAccentAccentColor--02--1: #FF754C;
+   --ShadeshAccentAccentColor--02--2: #FF9A7B;
+   --backColor: #1B1D21;
+
+}
+
+nav {
+   background-color: var(--backColor);
+}
+
+nav.topbar {
+   background-color: var(--backColor);
+   height: max-content;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 20px;
+   padding-left: 250px;
+
+}
+
+/* ------------------------------------------------------ */
+
+
+/* ------------------------------------------------------ */
+nav.topbar .section0 {
+   /* background-color: #1d1d1d; */
+   max-width: 20vw;
+   min-height: fit-content;
+   width: 20vw;
+   text-align: center;
+   margin-top: 15px;
+   display: flex;
+   justify-content: flex-start;
+   gap: 50px;
+   position: relative;
+   right: 230px;
+}
+
+.sectionss0 {
+   display: flex;
+   justify-content: start;
+   align-items: center;
+
+}
+
+.sectionss0 img {
+   width: 80px;
+}
+
+svg {
+   background-color: #00268500;
+}
+
+.sectionss0 p {
+   font-size: 1.5vw;
+   color: #ffffff;
+}
+
+nav.topbar .section0 .NavigationBtn {
+   border: none;
+   background-color: var(--backColor);
+   color: #FFFFFF75;
+   font-size: 30px;
+
+}
+
+@media(min-width:1024) and (max-width:1100) {}
+
+/* ------------------------------------------------------ */
+
+/* ------------------------------------------------------ */
+nav.topbar .section1 {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   /* background-color: #becae2; */
+   width: 170px;
+   margin-left: -650px;
+
+}
+
+nav.topbar .section1 img {
+   width: 20px;
+   height: 20px;
+}
+
+nav.topbar .section1 {
+   color: #FFFFFF75;
+}
+
+nav.topbar .section1 div.firstThingINnav {
+   /* background-color: #0049C6; */
+   display: flex;
+   justify-content: start;
+   align-items: center;
+   gap: 10px;
+}
+
+/* ------------------------------------------------------ */
+
+
+/* ------------------------------------------------------ */
+.sectionVV {
+   width: 100px;
+   margin-top: 4VH;
+   background-color: var(--backColor);
+   margin-right: 180px;
+   display: flex;
+   align-items: start;
+   flex-direction: column;
+   justify-content: center;
+   position: relative;
+   right: 250px;
+   bottom: 5px;
+}
+
+nav.topbar .sectionVV input.NONO {
+   position: relative;
+   left: 30px;
+   bottom: 25px;
+   height: 20px;
+   padding-top: 4px;
+   font-size: 20px;
+   color: #ffffff75;
+   background-color: #dfd1b700;
+   border: none;
+   font-family: Tahoma;
+   width: 200px;
+}
+
+nav.topbar .sectionVV input:focus {
+   outline: none;
+   background-color: var(--backColor);
+
+}
+
+/* ----------------------------------------------------------- */
+
+/* ----------------------------------------------------------- */
+nav.topbar .section3 {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   gap: 25px;
+   position: relative;
+   right: 300px;
+}
+
+nav.topbar .section3 img.imgForNav2 {
+   position: relative;
+   bottom: 5px;
+}
+
+nav.topbar .section3 img.imgForNav2 {
+   position: relative;
+   bottom: 5px;
+}
+
+nav.topbar .section3 img.imgForNav4 {
+   position: relative;
+   bottom: 5px;
+   margin-left: 15px;
+}
+
+/* ----------------------------------------------------------- */
+
+nav.sidebar .off-screen.active {
+   background-color: var(--backColor);
+   height: fit-content;
+   width: 100%;
+   max-width: 300px;
+   position: absolute;
+   display: flex;
+   flex-direction: column;
+   justify-content: start;
+   align-items: flex-start;
+   text-align: start;
+   gap: 25px;
+   font-size: 2rem;
+   transition: transform 0.3s ease-in-out;
+   transform: translateX(0);
+}
+
+.off-screen {
+   background-color: var(--backColor);
+   height: 100vh;
+   width: 100%;
+   max-width: 300px;
+   position: fixed;
+   transform: translateX(-100%);
+   transition: transform 0.3s ease-in-out;
+   left: 0;
+   top: 0;
+   z-index: 1000;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: flex-start;
+   text-align: start;
+   gap: 25px;
+   font-size: 2rem;
+   padding-top: 600px;
+   margin-top: 100px;
+}
+
+
+
+.off-screen #NewFeedsP {
+   font-size: 15px;
+   margin-left: 45px;
+   width: 300px;
+   color: #ffffff75;
+}
+
+.off-screen.active ul.menu {
+   margin-left: 20px;
+
+}
+
+.off-screen.active ul.menu li {
+   list-style: none;
+}
+
+.off-screen.active ul.menu li button {
+   background-color: var(--backColor);
+   width: 15rem;
+   padding: 25px 100px 25px 25px;
+   border: none;
+   color: #FFFFFF75;
+   font-size: 15px;
+   text-align: start;
+}
+
+.off-screen.active ul.menu li button:focus {
+   background-color: var(--MainPrimaryColor);
+   border-radius: 15px;
+   padding: 25px 100px 25px 25px;
+   color: #FFFFFF;
+}
+
+.off-screen.active ul.menu li button img.FuckYou:focus {
+
+   fill: #FFFFFF;
+}
+
+.off-screen ul.menu li {
+   list-style: none;
+}
+
+.off-screen ul.menu li button {
+   background-color: var(--backColor);
+   width: 15rem;
+   padding: 25px 100px 25px 25px;
+   border: none;
+   color: #FFFFFF75;
+   font-size: 15px;
+   text-align: start;
+}
+
+.off-screen ul.menu li button:focus {
+   background-color: var(--MainPrimaryColor);
+   border-radius: 15px;
+   padding: 25px 100px 25px 25px;
+   color: #FFFFFF;
+}
+
+.off-screen ul.menu li button img.FuckYou:focus {
+   position: relative;
+   top: 5px;
+   margin-right: 2px;
+   color: #FFFF;
+}
+
+hr {
+   color: #FFFFFF75;
+   width: 100%;
+}
+
+
+main .mainSection {
+   background-image: url(../FullProjectiploma/images/main-img-1.svg);
+   background-size: contain;
+   background-position: top;
+   background-repeat: no-repeat;
+   min-height: 100vh;
+   width: 100%;
+   margin: 0%;
+   padding: 0%;
+}
+
+main .mainSection div.dabashdata1 {
+   padding-top: 40vh;
+   padding-left: 10vh;
+}
+
+main div.navOfMain {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+main div.navOfMain h3 {
+   color: #FFFFFF;
+   padding-left: 10vh;
+   font-size: 24px;
+}
+
+main div.navOfMain select {
+   padding: 15px;
+   display: flex;
+   width: 180px;
+   background-color: #ffffff25;
+   color: #FFFFFF75;
+   border-radius: 10px;
+   margin-right: 10vh;
+   border: none;
+   align-items: center;
+   justify-content: center;
+   padding-right: 2vw;
+
+}
+
+button {
+   margin-left: 10px;
+}
+
+main div.navOfMain select:focus {
+   border: none;
+}
+
+main div.navOfMain select option {
+   background-color: #02020275;
+
+}
+
+main .Card {
+   display: flex;
+   margin-left: 10vh;
+   margin-right: 10vh;
+   justify-content: space-between;
+
+   margin-top: 3.5vh;
+}
+
+main .cardsOfSecondSection {
+   width: 241px;
+   height: 401px;
+   background-color: #FFFFFF;
+   border-radius: 20px 20px -10px -10px;
+   border-radius: 20px;
+}
+
+main .cardsOfSecondSection img.MainCardImg {
+   width: 100%;
+   border-radius: 20px 20px -10px -10px;
+   zoom: 1;
+   background-color: var(--backColor);
+}
+
+main .cardsOfSecondSection .allContent {
+
+   margin-bottom: 25px;
+}
+
+main .cardsOfSecondSection .allContent .nameAndImeg {
+   display: flex;
+   justify-content: flex-start;
+   align-items: center;
+   padding: 25px;
+   padding-top: 60px;
+   gap: 15px;
+}
+
+main .cardsOfSecondSection .allContent .liveandwatching {
+   display: flex;
+   gap: 10px;
+}
+
+main .cardsOfSecondSection .allContent .liveandwatching .img {
+   display: flex;
+   background-color: coral;
+   padding: 5px;
+   width: 60px;
+   justify-content: space-around;
+   border-radius: 10px;
+   height: 20px;
+}
+
+main .cardsOfSecondSection1 {
+   width: 241px;
+   height: 401px;
+   background-color: #FFFFFF;
+   border-radius: 20px 20px -10px -10px;
+   border-radius: 20px;
+}
+
+main .cardsOfSecondSection1 img.MainCardImg {
+   width: 100%;
+   border-radius: 20px 20px -10px -10px;
+   zoom: 1;
+   background-color: var(--backColor);
+}
+
+main .cardsOfSecondSection1 .allContent {
+
+   margin-bottom: 25px;
+}
+
+main .cardsOfSecondSection1 .allContent .nameAndImeg {
+   display: flex;
+   justify-content: flex-start;
+   align-items: center;
+   padding: 25px;
+   padding-top: 60px;
+   gap: 15px;
+}
+
+main .cardsOfSecondSection1 .allContent .liveandwatching {
+   display: flex;
+   gap: 10px;
+}
+
+main .cardsOfSecondSection1 .allContent .liveandwatching .img {
+   display: flex;
+   background-color: coral;
+   padding: 5px;
+   width: 60px;
+   justify-content: space-around;
+   border-radius: 10px;
+   height: 20px;
+}
+
+
+
+main .cardsOfSecondSection2 {
+   width: 241px;
+   height: 401px;
+   background-color: #FFFFFF;
+   border-radius: 20px 20px -10px -10px;
+   border-radius: 20px;
+}
+
+main .cardsOfSecondSection2 img.MainCardImg {
+   width: 100%;
+   border-radius: 20px 20px -10px -10px;
+   zoom: 1;
+   background-color: var(--backColor);
+}
+
+main .cardsOfSecondSection2 .allContent {
+
+   margin-bottom: 25px;
+}
+
+main .cardsOfSecondSection2 .allContent .nameAndImeg {
+   display: flex;
+   justify-content: flex-start;
+   align-items: center;
+   padding: 25px;
+   padding-top: 60px;
+   gap: 15px;
+}
+
+main .cardsOfSecondSection2 .allContent .liveandwatching {
+   display: flex;
+   gap: 10px;
+}
+
+main .cardsOfSecondSection2 .allContent .liveandwatching .img {
+   display: flex;
+   background-color: coral;
+   padding: 5px;
+   width: 60px;
+   justify-content: space-around;
+   border-radius: 10px;
+   height: 20px;
+}
+
+
+
+
+main .cardsOfSecondSection3 {
+   width: 241px;
+   height: 401px;
+   background-color: #FFFFFF;
+   border-radius: 20px 20px -10px -10px;
+   border-radius: 20px;
+}
+
+main .cardsOfSecondSection3 img.MainCardImg {
+   width: 100%;
+   border-radius: 20px 20px -10px -10px;
+   zoom: 1;
+   background-color: var(--backColor);
+}
+
+main .cardsOfSecondSection3 .allContent {
+
+   margin-bottom: 25px;
+}
+
+main .cardsOfSecondSection3 .allContent .nameAndImeg {
+   display: flex;
+   justify-content: flex-start;
+   align-items: center;
+   padding: 25px;
+   padding-top: 60px;
+   gap: 15px;
+}
+
+main .cardsOfSecondSection3 .allContent .liveandwatching {
+   display: flex;
+   gap: 10px;
+}
+
+main .cardsOfSecondSection3 .allContent .liveandwatching .img {
+   display: flex;
+   background-color: coral;
+   padding: 5px;
+   width: 60px;
+   justify-content: space-around;
+   border-radius: 10px;
+   height: 20px;
+}
+
+.thirdSection {
+   display: flex;
+   margin: 10vh;
+   padding: 1vi;
+   border-radius: 25PX;
+   background-color: #f0f3f60b;
+}
+
+.thirdSection p {
+   color: #FFFFFF;
+   font-size: 20px;
+   font-family: tahoma;
+}
+
+.thirdSection .peopleOnline {
+   display: flex;
+   align-items: center;
+   justify-content: space-evenly;
+}
+
+.thirdSection .peopleOnline .addYors {
+   height: 90px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.thirdSection .peopleOnline .addYors .ForAdd img {
+   border-radius: 100%;
+   fill: var(--MainPrimaryColor);
+}
+
+
+.thirdSection {
+   background-color: #2a2a2a;
+   padding: 20px;
+   border-radius: 20px;
+   max-width: 95%;
+   margin: auto;
+   padding: 3vh 0;
+   display: flex;
+   flex-direction: column;
+}
+
+/* Section title */
+.thirdSection>p {
+   font-size: 18px;
+   margin-bottom: 16px;
+
+}
+
+/* Horizontal scroll container */
+.peopleOnline {
+   display: flex;
+   gap: 30px;
+   align-items: center;
+}
+
+/* Add Yours container */
+.addYors {
+   width: 72px;
+   height: auto;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 5px;
+   cursor: pointer;
+   transition: transform 0.2s ease-in-out;
+}
+
+/* Hover effect */
+.addYors:hover {
+   transform: scale(1.05);
+}
+
+/* Circle with border */
+.addYors .imga {
+   width: 64px;
+   height: 64px;
+   border-radius: 50%;
+   border: 3px solid #6750f8;
+   display: flex;
+   align-items: start;
+   justify-content: center;
+   background-color: #2d2d2d;
+   /* optional background */
+}
+
+/* Plus icon */
+.addYors img {
+   width: 100%;
+   border-radius: 50%;
+   ;
+   object-fit: contain;
+}
+
+/* Text under icon */
+.addYors p {
+   font-size: 13px;
+   color: #eaeaea;
+   text-align: center;
+   margin: 0;
+}
+
+
+/* Each story item */
+.peopleNames {
+   width: 72px;
+   flex-shrink: 0;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   position: relative;
+}
+
+.color {
+   position: relative;
+   margin-bottom: 6px;
+}
+
+.color img {
+   width: 64px;
+   height: 64px;
+   border-radius: 50%;
+   border: 3px solid #6750f8;
+   /* Example border for story type */
+   object-fit: cover;
+}
+
+/* Online green dot */
+.onlinecolor {
+   width: 10px;
+   height: 10px;
+   background-color: #2dff73;
+   border-radius: 50%;
+   position: absolute;
+   top: 2px;
+   right: 2px;
+   border: 2px solid #2a2a2a;
+}
+
+/* Name and time */
+.name {
+   text-align: center;
+}
+
+.name p {
+   font-size: 12px;
+   margin: 2px 0;
+   color: #cccccc;
+}
+.fourthSection {
+   margin: 2vw;
+   width: 100%;
+}
+
+.fourthSection h3 {
+   font-size: 24px;
+   font-family: "Roboto";
+   color: #ffffff;
+   margin: 2vh 0;
+}
+
+.fourthSection .mainSection1 {
+   display: flex;
+   align-items: center;
+   gap: 40px;
+   margin-top: 20px;
+}
+
+.fourthSection .mainSection1 .main1 {
+   background-image: url(../FullProjectiploma/images/main-img-1.svg);
+   background-size: cover;
+   background-position: center;
+   width: 512px;
+   height: 676px;
+   border-radius: 20px;
+   position: relative;
+   padding: 20px;
+   color: white;
+}
+
+.arrow {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  display: flex;
+  gap: 20px;
+  background-color: #FFFFFF;
+
+}
+
+.arrow img {
+  border-radius: 50%;
+  width: 40px; /* حجم أصغر */
+   margin: 1vw;
+  height: 40px;
+}
+
+.containerOfMoba {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+}
+
+.containerOfMoba .one p {
+  font-family: "Roboto";
+  padding: 4px 0px;
+  border-radius: 12px;
+  display: inline-block;
+  margin-right: 10px;
+  background-color: hsla(235, 70%, 75%, 0.523);
+  padding: 5px 25px;
+  margin-bottom:10px ;
+}
+
+.tow h1 {
+  font-size: 24px;
+  font-family: "Roboto";
+}
+
+.tow button {
+   width: 131px;
+   padding: 100px 0px  ;
+  background-color: #6750f8;
+  border: none;
+  padding: 10px;
+   border-radius: 10px;
+  color: white;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.secondclass {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* الكرت المعتمد */
+.card {
+  background-color: #292d3e;
+  border-radius: 15px;
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+  color: white;
+}
+
+.card img {
+  width: 120px;
+  height: 100px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.card .info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card .category {
+  color: #6750f8;
+  font-size: 14px;
+}
+
+.card button {
+  background-color: #404258;
+  color: white;
+  padding: 6px 14px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
